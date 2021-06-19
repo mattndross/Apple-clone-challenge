@@ -4,22 +4,50 @@ body {
 }
 
 nav {
-    background: #000;
+    background-color: #000;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    
+
 }
 
 .menu-lines {
     width: 1.5rem;
-    height: 1.5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-lines span {
-    width: 1,5rem;
+    width: 1.5rem;
     height: 2px;
     background: #fff;
+    margin-top: 0.5rem ;
+
 }
 
-.apple-logo {
-    color:#fff; 
+.apple-logo, 
+.search-icon,
+.bag-icon {
+    color:rgb(219, 215, 215); 
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(221, 214, 214);
+}
+
+@media  screen and (max-width: 768px) {
+    
+    .desktop {
+        display: none;
+    }
+    
 }
